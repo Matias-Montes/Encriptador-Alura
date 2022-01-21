@@ -28,10 +28,7 @@ var botonCopiar = document.querySelector("#btn-copy");
 var caracteresProhibidos="ABCDEFGHYJKLMNÑOPQRSTUVWXYZáéíóúÁÉÍÓÚ!#$%&'()*+,-.\\/:;=?@[\"]^_`{|}~";
 
 
-
-
-
-function tiene_mayusculas(palabra){
+function encriptar(palabra){
     for(i=0; i<palabra.length; i++){
        if (caracteresProhibidos.indexOf(palabra.charAt(i),0)!=-1){
           return alert("El texto tiene un caracter invalido");
@@ -48,7 +45,7 @@ botonEncriptar.addEventListener("click", function(event){
     
     var palabra = frase.value;
 
-    tiene_mayusculas(palabra)
+    encriptar(palabra)
 });
 
 
